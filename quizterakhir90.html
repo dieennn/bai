@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ujian Akhir | Belajar Dasar AI |
+    Dicoding Indonesia</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/commons_style-768ffef7bb.css' />
+  <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/addons_style-ee070638b5.css' as='style'
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/addons_style-ee070638b5.css'>
+  </noscript>
+  <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/v3common_style-ab9b80bf2e.css' as='style'
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/v3common_style-ab9b80bf2e.css'>
+  </noscript>
+  <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/semicolon_style-e2d1999982.css' as='style'
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/semicolon_style-e2d1999982.css'>
+  </noscript>
+  <link rel='preload' href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap' as='style'
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap'>
+  </noscript>
+  <link rel='preload'
+    href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'
+    as='style' onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'>
+  </noscript>
+  <link rel='preload' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' as='style'
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+  </noscript>
+
+  <link rel='preload' href='/ui/froala290/css/froala_style.min.css' as='style' onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href='/ui/froala290/css/froala_style.min.css'>
+  </noscript>
+  <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/academy-tutorial-show_style-feb0b2bd9c.css'
+    as='style' onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href='https://d17ivq9b7rppb3.cloudfront.net/build/academy-tutorial-show_style-feb0b2bd9c.css'>
+  </noscript>
+  <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/v3-tutorial-show_style-7c9d16be2a.css' />
+</head>
+
+<body>
+  <div class="modal modal-fullscreen fade full-screen p-0 m-0 show" id="modal-exam-result" tabindex="-1" role="dialog"
+    aria-labelledby="modal-exam-result" aria-modal="true" style="display: block;">
+    <div class="modal-dialog modal-dialog-centered text-gray-700 font-weight-500 modal-lg">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-row flex-content-between border-bottom px-4">
+          <p class="modal-title font-weight-600 text-gray-700 text-lg p-2">
+            Hasil Exam
+          </p>
+          <button type="button" id="close-exam-result" class="close dcd-btn btn-ghost p-4" data-dismiss="modal"
+            aria-label="Close">
+            <svg width="14" height="14" class="" viewBox="0 0 14 14" fill="#3F3F46" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg> </button>
+        </div>
+        <div class="modal-body align-items-center mt-4 mb-0 academy-tutorial-content">
+          <div class="container-fluid row d-flex justify-content-between m-0">
+            <div class="col-lg-3 exam-result__brief-info px-2">
+              <p class="text-md mx-2 my-3">
+                <span class="font-weight-bold text-gray-500">Tanggal Ujian : </span>
+                <span class="text-gray-700 font-weight-400">27 Des 2024 pukul 08:51:42</span>
+              </p>
+
+              <div class="py-4 px-3 d-flex flex-row justify-content-around">
+                <div class="d-flex flex-column text-center">
+                  <p class="font-weight-600 text-gray-500">Total soal</p>
+                  <p class="exam-result__brief-info--number text-gray-500">
+                    20
+                  </p>
+                </div>
+                <div class="divider"></div>
+                <div class="d-flex flex-column text-center text-green-500">
+                  <p class="font-weight-600">Score</p>
+                  <p class="exam-result__brief-info--number">90</p>
+                </div>
+              </div>
+
+              <div class="px-4">
+                <p>Selamat! Anda telah lulus dari ujian ini.</p>
+              </div>
+            </div>
+            <div class="col-lg-7 exam-result__review-answers">
+              <div class="my-5">
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Berkenalan dengan AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa yang dilakukan pada tahap "Execute" dalam pengembangan AI?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-danger dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengevaluasi data.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menentukan algoritma.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Membuat keputusan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menggunakan model AI untuk melakukan tugas manusia.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-danger  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        0
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Berkenalan dengan AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Pembelajaran mesin adalah kemampuan komputer untuk secara otomatis belajar dari data dan
+                        meningkatkan kinerjanya<br>Apakah itu penjelasan tentang pembelajaran mesin? (Benar/Salah)
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Benar
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Salah
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Berkenalan dengan AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa yang dilakukan pada tahap "Transform" dalam pengembangan AI?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengumpulkan data dari berbagai sumber
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengeksekusi model AI
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Membuat keputusan berdasarkan model AI
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Persiapan data, mengubah data ke format yang dibutuhkan, dan mengevaluasi data.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Berkenalan dengan AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Bagian dari pembelajaran mesin yang didasarkan pada jaringan saraf tiruan. Proses
+                        pembelajarannya sangat dalam karena struktur jaringan saraf tiruan terdiri dari beberapa input,
+                        output, dan lapisan tersembunyi. Setiap lapisan berisi unit-unit yang mengubah data input
+                        menjadi informasi yang dapat digunakan oleh lapisan berikutnya untuk tugas prediksi tertentu.
+                        Jaringan ini beroperasi pada kumpulan data yang sangat besar.<br><br>Apakah itu penjelasan
+                        tentang deep learning? (Benar/Salah)
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Benar
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Salah
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Berkenalan dengan AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        <p>Manakah gambar taxonomy AI yang benar?</p>
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          <p><img alt="dos:ddb9928519cdd248348296adbeeb9ee320231124165948.png" class="fr-fil fr-dib"
+                              src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ddb9928519cdd248348296adbeeb9ee320231124165948.png">
+                          </p>
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          <p><img alt="dos:2cb2dc0f930049d521b933182e91740020231124165939.png" class="fr-fil fr-dib"
+                              src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:2cb2dc0f930049d521b933182e91740020231124165939.png">
+                          </p>
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          <p><img alt="dos:00b6e0beee6bd8498e254091a4767d0c20231124165930.png" class="fr-fil fr-dib"
+                              src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:00b6e0beee6bd8498e254091a4767d0c20231124165930.png">
+                          </p>
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          <p><img alt="dos:a4f07868cf44518077218e2ee7f81acc20231124165920.png" class="fr-fil fr-dib"
+                              src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:a4f07868cf44518077218e2ee7f81acc20231124165920.png">
+                          </p>
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Data untuk AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Dalam sebuah basis data pelanggan, terdapat dua entri yang memiliki nomor telepon sama.
+                        Bagaimana seharusnya penanganan terhadap entri ini?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Tidak melakukan tindakan apa pun karena hal ini wajar terjadi.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menggantikan nomor telepon salah satu entri dengan nomor yang berbeda.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mempertahankan kedua entri karena mungkin ada dua orang dengan nomor telepon yang sama.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menghapus satu dari kedua entri tersebut karena kemungkinan terjadi duplikasi data.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Data untuk AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Pada sebuah kuesioner, responden diminta untuk memilih warna favorit mereka dari pilihan merah,
+                        biru, hijau, atau kuning. Tipe data apa yang sesuai untuk representasi jawaban ini?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Kontinu
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Ordinal
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Nominal
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Diskrit
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Data untuk AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Dalam dataset tentang berat badan siswa, terdapat entri dengan nilai -5 kg.<br>Apa yang bisa
+                        disimpulkan dari pernyataan tersebut?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data tersebut merupakan outlier
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data tersebut terindikasi duplikat
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data tersebut tidak relevan
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data ini tidak memerlukan tindakan karena mungkin ada berat badan yang memiliki nilai negatif.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Data untuk AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Seorang pengembang machine learning menggunakan dataset yang memiliki pencilan (outlier) dalam
+                        satu fitur kritis. Bagaimana hal ini dapat memengaruhi performa model?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Outliers tidak memengaruhi model karena model dapat menyesuaikan diri.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Model akan mengabaikan nilai outlier karena tidak relevan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Model dapat menjadi sensitif terhadap nilai outlier dan menghasilkan prediksi yang tidak
+                          stabil.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Performa model hanya dipengaruhi oleh nilai rata-rata fitur tersebut.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Data untuk AI </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Pada sebuah survei, responden diminta menilai kepuasan mereka terhadap layanan pelanggan dengan
+                        skala 1 hingga 5 (1= sangat tidak puas, 5= sangat puas). Tipe data apa yang sesuai untuk
+                        representasi nilai-nilai ini?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Diskrit
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Kontinu
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Ordinal
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Data Nominal
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Pengantar Machine Learning </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Mengapa model machine learning dapat "belajar" dari data, sedangkan program tradisional tidak?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Program tradisional selalu dapat belajar dari data yang diberikan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Model machine learning tidak dapat belajar dari data, ini adalah konsep yang keliru.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Model machine learning memiliki algoritma pembelajaran yang terintegrasi.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Program tradisional hanya dapat mengikuti instruksi yang diberikan tanpa mampu menyesuaikan
+                          diri.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Pengantar Machine Learning </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa perbedaan utama antara supervised learning dan unsupervised learning?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Supervised learning melibatkan pemantauan manusia, sedangkan unsupervised learning tidak
+                          memerlukan pemantauan manusia.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Supervised learning menggunakan data tanpa label, sedangkan unsupervised learning menggunakan
+                          data dengan label.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Supervised learning hanya cocok untuk klasifikasi, sedangkan unsupervised learning hanya untuk
+                          regresi.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Supervised learning memerlukan variabel target atau output yang sudah diketahui, sedangkan
+                          unsupervised learning tidak.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Pengantar Machine Learning </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa fungsi dari tahap model deployment dalam machine learning workflow?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengevaluasi model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengintegrasikan model ke lingkungan produksi.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Melatih model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Melakukan feature scaling.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Pengantar Machine Learning </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa fungsi normalisasi dalam preprocessing data?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menetapkan nilai data ke rentang tertentu.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Meningkatkan interpretasi model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengubah data menjadi format yang sesuai dengan model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-danger dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Memilih variabel input yang paling penting.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-danger  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        0
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Pengantar Machine Learning </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa perbedaan mendasar antara machine learning dan pemrograman tradisional?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Pemrograman tradisional melibatkan penulisan algoritma secara eksplisit, sedangkan machine
+                          learning dapat "belajar" dari data.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Machine learning hanya dapat digunakan untuk tugas sederhana, sedangkan pemrograman
+                          tradisional cocok untuk tugas kompleks.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Machine learning tidak memerlukan pemrograman, sedangkan pemrograman tradisional memerlukan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Keduanya adalah konsep yang sama dengan nama yang berbeda.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Deep Learning untuk Semua Orang </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa peran fungsi aktivasi dalam jaringan saraf tiruan?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menambahkan kekompleksan model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menentukan jumlah layer dalam jaringan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Mengontrol kecepatan training.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Introduksi non-linearitas ke dalam model.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Deep Learning untuk Semua Orang </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa kelebihan menggunakan Teachable Machine dibandingkan dengan membuat model machine learning
+                        secara tradisional?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Tidak memerlukan pemahaman mendalam tentang algoritma deep learning.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Lebih lama dalam pembuatan model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Memberikan kontrol yang lebih besar atas parameter model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Hanya cocok untuk tugas-tugas sederhana.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Deep Learning untuk Semua Orang </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa yang membedakan deep learning dengan machine learning konvensional?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Deep learning tidak memerlukan training.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Deep learning memerlukan jumlah data yang lebih sedikit.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Deep learning menggunakan model neural network dengan banyak lapisan.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Deep learning hanya menggunakan data struktural.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Deep Learning untuk Semua Orang </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa fungsi dari fungsi aktivasi sigmoid dalam jaringan saraf tiruan?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menyebabkan vanishing gradient problem.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Memperkenalkan non-linearitas ke dalam model.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Menghasilkan output yang bersifat biner.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Tidak memiliki fungsi khusus.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-2 content--prettify-light">
+                  <p class="font-weight-bold text-gray-700"> Kategori : Deep Learning untuk Semua Orang </p>
+                  <div class="row">
+                    <div class="col-10">
+                      <div class="fr-view font-weight-bold text-gray-700 dcd-multiple-choice__question pb-3">
+                        Apa yang terjadi jika output dari neuron menggunakan fungsi aktivasi ReLU adalah negatif?
+                      </div>
+
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-success dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          A
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Output menjadi nol.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          B
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Output menjadi positif.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          C
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Output menjadi satu.
+                        </span>
+                      </div>
+                      <div class="mb-3 dcd-multiple-choice__answer d-flex">
+                        <label
+                          class="dcd-badge-neutral dcd-badge bg-white dcd-multiple-choice__answer--label align-self-start px-3 mb-0">
+                          D
+                        </label>
+
+                        <span class="ml-3 my-auto fr-view dcd-multiple-choice__answer--text text-md align-self-center">
+                          Output tetap negatif.
+                        </span>
+                      </div>
+
+                    </div>
+                    <div class="col-2">
+                      <label
+                        class="dcd-badge  dcd-badge-success  dcd-multiple-choice__answer--label justify-content-center px-3">
+                        1
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
